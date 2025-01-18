@@ -192,7 +192,7 @@ Description: Qt 6 Wayland developer tools
  At the moment there is only qtwaylandscanner tool here.
 
 Package: qt6-wayland-doc
-Architecture: all
+Architecture: any
 Section: doc
 Depends: qt6-base-doc, ${misc:Depends},
 Multi-Arch: foreign
@@ -203,7 +203,7 @@ Description: Qt 6 wayland documentation
  This package contains the documentation for the Qt 6 wayland.
 
 Package: qt6-wayland-doc-html
-Architecture: all
+Architecture: any
 Section: doc
 Depends: qt6-base-doc-html, ${misc:Depends},
 Multi-Arch: foreign
