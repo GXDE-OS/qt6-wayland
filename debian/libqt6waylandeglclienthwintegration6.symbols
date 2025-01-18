@@ -1,0 +1,66 @@
+# SymbolsHelper-Confirmed: 6.3.0 amd64 arm64 armel armhf i386 ia64 mips64el mipsel powerpc ppc64 ppc64el s390x sparc64
+libQt6WaylandEglClientHwIntegration.so.6 libqt6waylandeglclienthwintegration6 #MINVER#
+* Build-Depends-Package: qt6-wayland-dev
+ _ZN15QtWaylandClient17QWaylandEglWindow10ensureSizeEv@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindow11qt_metacallEN11QMetaObject4CallEiPPv@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindow11qt_metacastEPKc@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindow11setGeometryERK5QRect@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindow13updateSurfaceEb@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindow14bindContentFBOEv@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindow16staticMetaObjectE@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindow17invalidateSurfaceEv@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindowC1EP7QWindowPNS_15QWaylandDisplayE@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindowC2EP7QWindowPNS_15QWaylandDisplayE@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindowD0Ev@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindowD1Ev@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandEglWindowD2Ev@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContext10beginFrameEv@Base 6.3.0
+ _ZN15QtWaylandClient17QWaylandGLContext11doneCurrentEv@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContext11makeCurrentEP16QPlatformSurface@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContext11swapBuffersEP16QPlatformSurface@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContext14getProcAddressEPKc@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContext28eglSurfaceForPlatformSurfaceEP16QPlatformSurface@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContext31createTemporaryOffscreenSurfaceEv@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContext32destroyTemporaryOffscreenSurfaceEPv@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContext8endFrameEv@Base 6.3.0
+ _ZN15QtWaylandClient17QWaylandGLContextC1EPvPNS_15QWaylandDisplayERK14QSurfaceFormatP22QPlatformOpenGLContext@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContextC2EPvPNS_15QWaylandDisplayERK14QSurfaceFormatP22QPlatformOpenGLContext@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContextD0Ev@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContextD1Ev@Base 6.2.2
+ _ZN15QtWaylandClient17QWaylandGLContextD2Ev@Base 6.2.2
+ _ZN15QtWaylandClient34QWaylandEglClientBufferIntegration10initializeEPNS_15QWaylandDisplayE@Base 6.2.2
+ _ZN15QtWaylandClient34QWaylandEglClientBufferIntegration14nativeResourceENS_31QWaylandClientBufferIntegration14NativeResourceE@Base 6.2.2
+ _ZN15QtWaylandClient34QWaylandEglClientBufferIntegration15createEglWindowEP7QWindow@Base 6.2.2
+ _ZN15QtWaylandClient34QWaylandEglClientBufferIntegration24nativeResourceForContextENS_31QWaylandClientBufferIntegration14NativeResourceEP22QPlatformOpenGLContext@Base 6.2.2
+ _ZN15QtWaylandClient34QWaylandEglClientBufferIntegrationC1Ev@Base 6.2.2
+ _ZN15QtWaylandClient34QWaylandEglClientBufferIntegrationC2Ev@Base 6.2.2
+ _ZN15QtWaylandClient34QWaylandEglClientBufferIntegrationD0Ev@Base 6.2.2
+ _ZN15QtWaylandClient34QWaylandEglClientBufferIntegrationD1Ev@Base 6.2.2
+ _ZN15QtWaylandClient34QWaylandEglClientBufferIntegrationD2Ev@Base 6.2.2
+ _ZNK15QtWaylandClient17QWaylandEglWindow10contentFBOEv@Base 6.2.2
+ _ZNK15QtWaylandClient17QWaylandEglWindow10eglSurfaceEv@Base 6.2.2
+ _ZNK15QtWaylandClient17QWaylandEglWindow10metaObjectEv@Base 6.2.2
+ _ZNK15QtWaylandClient17QWaylandEglWindow10windowTypeEv@Base 6.2.2
+ _ZNK15QtWaylandClient17QWaylandEglWindow12contentsRectEv@Base 6.2.2
+ _ZNK15QtWaylandClient17QWaylandEglWindow14contentTextureEv@Base 6.2.2
+ _ZNK15QtWaylandClient17QWaylandEglWindow6formatEv@Base 6.2.2
+ _ZNK15QtWaylandClient17QWaylandGLContext24defaultFramebufferObjectEP16QPlatformSurface@Base 6.2.2
+ _ZNK15QtWaylandClient34QWaylandEglClientBufferIntegration10eglDisplayEv@Base 6.2.2
+ _ZNK15QtWaylandClient34QWaylandEglClientBufferIntegration22supportsThreadedOpenGLEv@Base 6.2.2
+ _ZNK15QtWaylandClient34QWaylandEglClientBufferIntegration24supportsWindowDecorationEv@Base 6.2.2
+ _ZNK15QtWaylandClient34QWaylandEglClientBufferIntegration27createPlatformOpenGLContextERK14QSurfaceFormatP22QPlatformOpenGLContext@Base 6.2.2
+ _ZNK15QtWaylandClient34QWaylandEglClientBufferIntegration7isValidEv@Base 6.2.2
+ _ZTIN15QtWaylandClient17QWaylandEglWindowE@Base 6.2.2
+ _ZTIN15QtWaylandClient17QWaylandGLContextE@Base 6.2.2
+ _ZTIN15QtWaylandClient34QWaylandEglClientBufferIntegrationE@Base 6.2.2
+ _ZTSN15QtWaylandClient17QWaylandEglWindowE@Base 6.2.2
+ _ZTSN15QtWaylandClient17QWaylandGLContextE@Base 6.2.2
+ _ZTSN15QtWaylandClient34QWaylandEglClientBufferIntegrationE@Base 6.2.2
+ _ZTVN15QtWaylandClient17QWaylandEglWindowE@Base 6.2.2
+ _ZTVN15QtWaylandClient17QWaylandGLContextE@Base 6.2.2
+ _ZTVN15QtWaylandClient34QWaylandEglClientBufferIntegrationE@Base 6.2.2
+ (c++)"non-virtual thunk to QtWaylandClient::QWaylandEglWindow::format() const@Base" 6.2.2
+ (c++)"non-virtual thunk to QtWaylandClient::QWaylandEglWindow::invalidateSurface()@Base" 6.2.2
+ (c++)"non-virtual thunk to QtWaylandClient::QWaylandEglWindow::setGeometry(QRect const&)@Base" 6.2.2
+ (c++)"non-virtual thunk to QtWaylandClient::QWaylandEglWindow::~QWaylandEglWindow()@Base" 6.2.2
+ (c++)"non-virtual thunk to QtWaylandClient::QWaylandGLContext::~QWaylandGLContext()@Base" 6.2.2

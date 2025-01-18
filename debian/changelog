@@ -1,0 +1,172 @@
+qt6-wayland (6.4.2-5~bpo12+1) bookworm-backports; urgency=medium
+
+  * Rebuild for bookworm-backports.
+  * debian/control: Revert changes that dropped build-dependency on
+    libqt6opengl6-dev, still needed for Debian Bookworm.
+  * debian/control: Do not build qt6-wayland-examples since the binaries
+    are not generated on Bookworm.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 30 Apr 2024 14:20:57 -0400
+
+qt6-wayland (6.4.2-5) unstable; urgency=medium
+
+  [ Patrick Franz ]
+  * Upload to unstable.
+
+ -- Patrick Franz <deltaone@debian.org>  Tue, 26 Sep 2023 20:25:16 +0200
+
+qt6-wayland (6.4.2-4) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Add package for the private headers (Closes: #1013222).
+  * Replace libfontconfig1-dev with libfontconfig-dev in the B-Ds as the
+    former is superseded by the latter.
+
+ -- Patrick Franz <deltaone@debian.org>  Tue, 26 Sep 2023 19:12:41 +0200
+
+qt6-wayland (6.4.2-3) unstable; urgency=medium
+
+  * Team upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 01 Aug 2023 13:38:10 -0300
+
+qt6-wayland (6.4.2-2) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Patrick Franz ]
+  * Remove build-dependency on libqt6opengl6-dev as it has been merged
+    into qt6-base-dev.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add documentation and examples packages (Closes: #1042285).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 28 Jul 2023 19:05:34 -0300
+
+qt6-wayland (6.4.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * Add libwayland-dev as qt6-wayland-dev dependency, as CMake files look for
+    its presence.
+  * Switch to the official 6.4.2 tarball, the tarball is the same.
+  * Install private components, which are not tied to private headers and
+    required by the main, public components (Closes: #1029098).
+    Thanks Rodney Dawes for the bug report!
+    https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1013222#50
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 17 Jan 2023 14:44:16 -0300
+
+qt6-wayland (6.4.2~rc1-2) unstable; urgency=medium
+
+  [ Patrick Franz ]
+  * Upload to unstable.
+
+ -- Patrick Franz <deltaone@debian.org>  Fri, 30 Dec 2022 16:59:20 +0100
+
+qt6-wayland (6.4.2~rc1-1) experimental; urgency=medium
+
+  [ Lu YaNing ]
+  * New upstream release (6.4.1).
+  * Bump Qt B-Ds to 6.4.1.
+  * Update debian/copyright.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release 6.4.2.
+    - Bump Qt build dependencies.
+  * Bump standards version to 4.6.2, no changes required.
+
+ -- Patrick Franz <deltaone@debian.org>  Tue, 27 Dec 2022 22:28:01 +0100
+
+qt6-wayland (6.4.0-2) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Enable link time optimization (Closes: #1015627).
+  * Fix FTCBFS, thx to Helmut Grohne (Closes: #1023088):
+    + Pass QT_HOST_PATH and QT_HOST_PATH_CMAKE_DIR.
+    + Depend on a native version of ourselves.
+    + qt6-wayland-dev needs to depend on qt6-wayland-dev-tools.
+    + Do build tools when cross compiling.
+
+ -- Patrick Franz <deltaone@debian.org>  Sat, 05 Nov 2022 11:03:07 +0100
+
+qt6-wayland (6.4.0-1) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * New upstream release (6.4.0).
+  * Bump Qt B-Ds to 6.4.0.
+  * Increase CMake verbosity level.
+  * Bump minimum CMake version in order to get pkg-config's .pc files.
+  * Update list of installed files.
+  * Update symbols from buildlogs.
+
+ -- Patrick Franz <deltaone@debian.org>  Thu, 13 Oct 2022 12:33:04 +0200
+
+qt6-wayland (6.3.1-2) unstable; urgency=medium
+
+  [ Patrick Franz ]
+  * Upload to unstable.
+
+ -- Patrick Franz <deltaone@debian.org>  Mon, 15 Aug 2022 19:24:06 +0200
+
+qt6-wayland (6.3.1-1) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * New upstream release (6.3.1).
+  * Bump Qt B-Ds to 6.3.1.
+  * Bump Standards-Version to 4.6.1 (no changes needed).
+  * Update list of installed files.
+
+ -- Patrick Franz <deltaone@debian.org>  Sun, 17 Jul 2022 19:37:47 +0200
+
+qt6-wayland (6.3.0-2) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Update symbols from buildlogs.
+
+ -- Patrick Franz <deltaone@debian.org>  Sun, 19 Jun 2022 14:12:52 +0200
+
+qt6-wayland (6.3.0-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Update the .install files.
+  * Add my name to Uploaders.
+  * Bump build dependencies to grab 6.3.0.
+
+ -- Simon Quigley <tsimonq2@debian.org>  Fri, 17 Jun 2022 21:11:54 -0500
+
+qt6-wayland (6.2.4-2) unstable; urgency=medium
+
+  [ Patrick Franz ]
+  * Upload to unstable.
+
+ -- Patrick Franz <deltaone@debian.org>  Fri, 22 Apr 2022 20:07:50 +0200
+
+qt6-wayland (6.2.4-1) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * New upstream release (6.2.4).
+  * Bump Qt B-Ds to 6.2.4.
+  * Update list of installed files.
+  * Update symbols from buildlogs.
+
+ -- Patrick Franz <deltaone@debian.org>  Wed, 30 Mar 2022 21:07:22 +0200
+
+qt6-wayland (6.2.2-3) unstable; urgency=medium
+
+  [ Patrick Franz ]
+  * Upload to unstable.
+
+ -- Patrick Franz <deltaone@debian.org>  Tue, 15 Feb 2022 22:23:13 +0100
+
+qt6-wayland (6.2.2-2) experimental; urgency=medium
+
+  [ Patrick Franz ]
+  * Update symbols from buildlogs.
+
+ -- Patrick Franz <deltaone@debian.org>  Sat, 01 Jan 2022 18:26:54 +0100
+
+qt6-wayland (6.2.2-1) experimental; urgency=medium
+
+  * Initial release (Closes: #999898)
+
+ -- Patrick Franz <deltaone@debian.org>  Thu, 18 Nov 2021 09:15:34 +0100

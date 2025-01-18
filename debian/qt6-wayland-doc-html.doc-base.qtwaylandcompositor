@@ -1,0 +1,9 @@
+Document: qt6-waylandcompositor-manual
+Title: Qt 6 Wayland Compositor
+Author: The Qt Company Ltd
+Abstract: This is the HTML documentation for Qt 6 Wayland Compositor
+Section: Programming/C++
+
+Format: HTML
+Index: /usr/share/doc/qt6-wayland-doc-html/html/qtwaylandcompositor/qtwaylandcompositor-index.html
+Files: /usr/share/doc/qt6-wayland-doc-html/html/qtwaylandcompositor/*.html

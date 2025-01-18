@@ -1,0 +1,12 @@
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtWaylandClient/6.*
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtWaylandCompositor/6.*
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtWaylandEglClientHwIntegration/6.*
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtWaylandEglCompositorHwIntegration/6.*
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtWaylandGlobal/6.*
+usr/include/${DEB_HOST_MULTIARCH}/qt6/QtWlShellIntegration/6.*
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_wayland_egl_client_hw_integration_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_wayland_egl_compositor_hw_integration_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_waylandclient_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_waylandcompositor_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_waylandglobal_private.pri
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/mkspecs/modules/qt_lib_wl_shell_integration_private.pri

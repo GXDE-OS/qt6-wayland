@@ -1,0 +1,214 @@
+Source: qt6-wayland
+Section: libs
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Patrick Franz <deltaone@debian.org>,
+           Lu YaNing <dluyaning@gmail.com>,
+           Simon Quigley <tsimonq2@debian.org>,
+Build-Depends: cmake (>= 3.24~),
+               debhelper-compat (= 13),
+               libdrm-dev,
+               libegl1-mesa-dev,
+               libfontconfig-dev,
+               libgl-dev,
+               libqt6opengl6-dev (>= 6.4.2+dfsg~),
+               libssl-dev,
+               libvulkan-dev [linux-any],
+               libwayland-dev (>= 1.8.0),
+               libxcomposite-dev,
+               libxkbcommon-dev (>= 0.2.0),
+               ninja-build,
+               pkg-config,
+               pkg-kde-tools,
+               qt6-base-dev (>= 6.4.2+dfsg~),
+               qt6-base-private-dev (>= 6.4.2+dfsg~),
+               qt6-declarative-dev (>= 6.4.2+dfsg~),
+               qt6-declarative-private-dev (>= 6.4.2+dfsg~),
+               qt6-wayland-dev:native <cross>,
+               xauth <!nocheck>,
+               xvfb <!nocheck>,
+               zlib1g-dev,
+Build-Depends-Indep: qt6-base-dev (>= 6.4~) <!nodoc>,
+                     qt6-documentation-tools (>= 6.4~) <!nodoc>,
+Standards-Version: 4.6.2
+Homepage: https://www.qt.io/developers/
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt6/qt6-wayland
+Vcs-Git: https://salsa.debian.org/qt-kde-team/qt6/qt6-wayland.git
+Rules-Requires-Root: no
+
+Package: libqt6waylandclient6
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends},
+Description: Qt 6 Wayland Client library
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWayland is a Qt 6 module that wraps the functionality of Wayland.
+ .
+ This package contains the Qt 6 Wayland Client library.
+
+Package: libqt6waylandcompositor6
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends},
+Description: Qt 6 Wayland Compositor library
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWayland is a Qt 6 module that wraps the functionality of Wayland.
+ .
+ This package contains the Qt 6 Wayland Compositor library.
+
+Package: libqt6waylandeglclienthwintegration6
+Architecture: any
+Multi-Arch: same
+Depends: libqt6waylandclient6 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Qt 6 Wayland WaylandEglClientHwIntegration library
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWayland is a Qt 6 module that wraps the functionality of Wayland.
+ .
+ This package contains the Qt 6 Wayland EglClientHwIntegration library.
+
+Package: libqt6waylandeglcompositorhwintegration6
+Architecture: any
+Multi-Arch: same
+Depends: libqt6waylandclient6 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Qt 6 Wayland WaylandEglCompositorHwIntegration library
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWayland is a Qt 6 module that wraps the functionality of Wayland.
+ .
+ This package contains the Qt 6 Wayland EglCompositorHwIntegration library.
+
+Package: libqt6wlshellintegration6
+Architecture: any
+Multi-Arch: same
+Depends: libqt6waylandclient6 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Qt 6 Wayland ShellIntegration library
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWayland is a Qt 6 module that wraps the functionality of Wayland.
+ .
+ This package contains the Qt 6 Wayland ShellIntegration library.
+
+Package: qml6-module-qtwayland-compositor
+Multi-Arch: same
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends},
+Description: Qt 6 Wayland Compositor QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The Qt Wayland Compositor modules provide QML types that can be used to
+ create custom display servers supporting the Wayland protocol.
+
+Package: qml6-module-qtwayland-client-texturesharing
+Multi-Arch: same
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends},
+Description: Qt 6 Wayland Shared Texture Provider QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This module allows Qt Wayland clients to use graphical resources exported
+ by the compositor, without allocating any graphics memory in the client.
+
+Package: qt6-wayland
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends},
+Description: Qt 6 Wayland platform plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWayland is a Qt 6 module that wraps the functionality of Wayland.
+ .
+ This package contains the QtWayland platform plugin, which allows users
+ to run Qt 6 applications under Wayland, and the qtwaylandscanner
+ binary.
+
+Package: qt6-wayland-dev
+Architecture: any
+Section: libdevel
+Multi-Arch: same
+Depends: libqt6waylandclient6 (= ${binary:Version}),
+         libqt6waylandcompositor6 (= ${binary:Version}),
+         libqt6waylandeglclienthwintegration6 (= ${binary:Version}),
+         libqt6waylandeglcompositorhwintegration6 (= ${binary:Version}),
+         libqt6wlshellintegration6 (= ${binary:Version}),
+         libwayland-dev,
+         qt6-wayland-dev-tools (= ${binary:Version}),
+         ${misc:Depends},
+Description: Qt 6 Wayland - development files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWayland is a Qt 6 module that wraps the functionality of Wayland.
+ .
+ This package contains the development files for QtWayland client
+ and compositor libraries.
+
+Package: qt6-wayland-private-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: qt6-wayland-dev (= ${binary:Version}), ${misc:Depends},
+Breaks: qt6-wayland-dev (<< 6.4.2-4),
+Replaces: qt6-wayland-dev (<< 6.4.2-4),
+Description: Qt 6 Wayland - private development files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWayland is a Qt 6 module that wraps the functionality of Wayland.
+ .
+ This package contains the private header development files for
+ QtWayland client and compositor libraries.
+ .
+ Use at your own risk.
+
+Package: qt6-wayland-dev-tools
+Architecture: any
+Multi-Arch: foreign
+Section: devel
+Depends: ${misc:Depends}, ${shlibs:Depends},
+Description: Qt 6 Wayland developer tools
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ QtWayland is a Qt 6 module that wraps the functionality of Wayland.
+ .
+ This package contains the QtWayland developer tools.
+ At the moment there is only qtwaylandscanner tool here.
+
+Package: qt6-wayland-doc
+Architecture: all
+Section: doc
+Depends: qt6-base-doc, ${misc:Depends},
+Multi-Arch: foreign
+Description: Qt 6 wayland documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the documentation for the Qt 6 wayland.
+
+Package: qt6-wayland-doc-html
+Architecture: all
+Section: doc
+Depends: qt6-base-doc-html, ${misc:Depends},
+Multi-Arch: foreign
+Description: Qt 6 wayland HTML documentation
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the HTML documentation for the Qt 6 wayland.
